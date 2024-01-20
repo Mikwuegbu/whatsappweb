@@ -67,46 +67,62 @@
 
 		<main class="flex items-center justify-center h-screen">
 			<div class="px-10 relative">
-				<img
-					src="./assets/img8.png"
-					alt="mother holding her child"
-					class="w-screen h-screen rounded-3xl"
-					srcset=""
-				/>
-				<div class="flex flex-row top-20 space-x-16 justify-center absolute">
-					<div class="basis-1/4 justify-center py-28">
-						<p class="font-medium text-7xl text-white">Message privately</p>
-						<p class="font-normal text-white text-lg pt-6 w-11/12">
+				<div class="w-full h-full overflow-hidden">
+					<img
+						src="./assets/img8.png"
+						alt="mother holding her child"
+						class="w-screen h-screen rounded-3xl object-cover"
+						srcset=""
+					/>
+				</div>
+				<div
+					class="flex flex-col lg:flex-row lg:items-center lg:space-x-16 top-20 justify-center absolute"
+				>
+					<div class="lg:basis-1/4 lg:py-28 order-2 lg:order-1">
+						<p class="font-medium text-4xl lg:text-7xl text-white">
+							Message privately
+						</p>
+						<p
+							class="font-normal text-white text-base lg:text-lg pt-6 lg:w-11/12"
+						>
 							Simple, reliable, private messaging and calling for free*,
 							available all over the world.
 						</p>
 						<div class="pt-16">
 							<div
-								class="bg-green-500 py-4 w-36 rounded-full text-center text-base cursor-pointer"
+								class="bg-green-500 py-3 lg:py-4 w-28 lg:w-36 rounded-full text-center text-sm lg:text-base cursor-pointer"
 							>
 								Download
-								<i class="fa-solid fa-download pl-3"></i>
+								<i class="fa-solid fa-download pl-2"></i>
 							</div>
 						</div>
 					</div>
-					<div class="basis-1/2 w-36 justify-center">
+					<div class="lg:basis-1/2 w-full lg:w-36 order-1 lg:order-2">
 						<div class="relative">
-							<img src="./assets/img5.png" class="" />
-							<img src="./assets/img3.png" class="absolute top-4" />
+							<img src="./assets/img5.png" class="w-full" alt="Image 5" />
+							<img
+								src="./assets/img3.png"
+								class="absolute top-4"
+								alt="Image 3"
+							/>
 						</div>
-						<img src="./assets/img4.png" class="" />
-						<div>
-							<img src="./assets/img1.png" class="py-1" />
+						<img src="./assets/img4.png" class="w-full" alt="Image 4" />
+						<div class="hidden lg:block">
+							<img src="./assets/img1.png" class="py-1 w-full" alt="Image 1" />
 							<div class="relative">
-								<img src="./assets/img2.png" alt="" srcset="" />
-								<img src="./assets/img7.png" class="absolute -bottom-6" />
+								<img src="./assets/img2.png" alt="Image 2" class="w-full" />
+								<img
+									src="./assets/img7.png"
+									class="absolute -bottom-6"
+									alt="Image 7"
+								/>
 							</div>
 						</div>
-						<img src="./assets/img6.png" class="py-14" />
-
-						<!-- <p class="font-normal text-xs text-gray-500 absolute pt-12">
-							* Data charges may apply. Contact your provider for details.
-						</p> -->
+						<img
+							src="./assets/img6.png"
+							class="py-8 w-full hidden lg:block"
+							alt="Image 6"
+						/>
 					</div>
 				</div>
 			</div>
