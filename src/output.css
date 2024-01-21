@@ -711,6 +711,23 @@ video {
   width: 7rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
 .basis-1\/12 {
   flex-basis: 8.333333%;
 }
@@ -733,6 +750,10 @@ video {
 
 .basis-11\/12 {
   flex-basis: 91.666667%;
+}
+
+.basis-2\/3 {
+  flex-basis: 66.666667%;
 }
 
 .scale-100 {
@@ -1334,6 +1355,18 @@ video {
 
   .lg\:w-5 {
     width: 1.25rem;
+  }
+
+  .lg\:w-3 {
+    width: 0.75rem;
+  }
+
+  .lg\:w-28 {
+    width: 7rem;
+  }
+
+  .lg\:w-24 {
+    width: 6rem;
   }
 
   .lg\:basis-1\/6 {
