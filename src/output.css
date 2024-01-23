@@ -1095,6 +1095,18 @@ video {
   margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-14 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
+}
+
 .place-self-center {
   place-self: center;
 }
@@ -1572,6 +1584,11 @@ video {
 
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-green-400:hover {
